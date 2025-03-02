@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-//import 'package:image/image.dart' as img;
-//import 'dart:typed_data';
 import 'package:lottie/lottie.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -315,29 +313,5 @@ class _MySearchState extends State<MySearch> {
   void _showSnackBar(String message) {
     ScaffoldMessenger.of(context)
         .showSnackBar(SnackBar(content: Text(message)));
-  }
-
-  Future<String?> getImageUrlByName(String mudraName) async {
-    String userId =
-        FirebaseAuth.instance.currentUser!.email!.replaceAll('.', '_');
-
-    try {
-      var querySnapshot = await FirebaseFirestore.instance
-          .collection('users')
-          .doc(userId)
-          .collection('search_history')
-          .where('mudra', isEqualTo: mudraName)
-          .limit(1) // Limit to one result
-          .get();
-
-      if (querySnapshot.docs.isNotEmpty) {
-        return querySnapshot.docs.first['imageUrl'];
-      } else {
-        return null; // No image found
-      }
-    } catch (e) {
-      print('Error fetching image URL: $e');
-      return null;
-    }
   }
 }
