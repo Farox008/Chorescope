@@ -38,12 +38,16 @@ android {
             signingConfig = signingConfigs.debug // Using debug signing config for now
         }
     }
+   
 }
 
 dependencies {
     implementation platform('com.google.firebase:firebase-bom:33.8.0')  // Firebase BOM for version management
     implementation 'com.google.firebase:firebase-analytics'  // Firebase Analytics
+    //implementation 'org.tensorflow:tensorflow-lite:2.10.0'  // Replace + with a fixed version
 }
+
+
 
 flutter {
     source = "../.."  // Define Flutter source path
@@ -51,3 +55,4 @@ flutter {
 
 // Apply the Google Services plugin to enable Firebase services
 apply plugin: 'com.google.gms.google-services'  // Make sure this line is at the end
+

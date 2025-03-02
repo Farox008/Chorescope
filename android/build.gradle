@@ -7,6 +7,7 @@ buildscript {
         // Add the classpath for Google services here
         classpath 'com.google.gms:google-services:4.4.2'  // Google Services classpath
         classpath 'com.android.tools.build:gradle:8.2.1'   // Android Gradle Plugin (Ensure version matches your setup)
+        
     }
 }
 
@@ -28,3 +29,4 @@ subprojects {
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
+

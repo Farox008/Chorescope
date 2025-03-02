@@ -45,6 +45,13 @@ dependencies:
   font_awesome_flutter: ^10.8.0
   google_sign_in: ^6.2.2
   email_validator: ^2.1.17
+  lottie: ^3.0.0
+  http: ^1.3.0
+  youtube_player_flutter: ^9.1.1
+  image: ^4.5.2
+  exif: ^3.3.0
+  flutter_screenutil: ^5.9.3
+  flutter_launcher_icons: ^0.14.3
 
 dev_dependencies:
   flutter_test:
@@ -56,7 +63,6 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
-  flutter_launcher_icons: ^0.14.3
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -73,7 +79,46 @@ flutter:
   assets:
      - assets/images/logo.png
      - assets/images/google-removebg-preview.png
-
+     - assets/animations/Animation-1.json
+     - assets/animations/Animation - 2.json
+     - assets/animations/Animation - 3.json
+     - assets/images/bharathanatyam.png
+     - assets/images/kathak.png
+     - assets/images/kathakali.png
+     - assets/images/kuchipudi.png
+     - assets/images/mohiniyattam.png
+     - assets/images/image.png
+     - assets/mudras/ALAPADMAM.jpg
+     - assets/mudras/ARALA.jpg
+     - assets/mudras/ARDHA_CHANDRA.jpg
+     - assets/mudras/ARDHA _PATHAKA.jpg
+     - assets/mudras/BRAMARAM.jpg
+     - assets/mudras/CHANDRA KALA.jpg
+     - assets/mudras/CHATHURAM.jpg
+     - assets/mudras/HAMSAPAKSHA.jpg
+     - assets/mudras/HAMSASYAM.jpg
+     - assets/mudras/KANGULAM.jpg
+     - assets/mudras/KAPITHA.jpg
+     - assets/mudras/KATAKAMUKHA_1.jpg
+     - assets/mudras/KATAKAMUKHA_2.jpg
+     - assets/mudras/KATAKAMUKHA_3.jpg
+     - assets/mudras/KATRIMUKHA.jpg
+     - assets/mudras/MAYURA.jpg
+     - assets/mudras/MRIGASIRSHA.jpg
+     - assets/mudras/MUKULAM.jpg
+     - assets/mudras/MUSHTI.jpg
+     - assets/mudras/PADMAKOSHA.jpg
+     - assets/mudras/PATHAKA.jpg
+     - assets/mudras/SARPASIRSHA.jpg
+     - assets/mudras/SHUKATUNDAM.jpg
+     - assets/mudras/SHIKHARA.jpg
+     - assets/mudras/SIMHAMUKHAM.jpg
+     - assets/mudras/SOOCHI.jpg
+     - assets/mudras/TAMARACHUDAM.jpg
+     - assets/mudras/TRI_PATHAKA.jpg
+     - assets/mudras/TRISHULAM.jpg
+     - assets/mudras/default.png
+     
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 
